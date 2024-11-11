@@ -1,0 +1,124 @@
+.container {
+  padding: 1rem;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  flex-direction: column;
+}
+
+.title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.times {
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  color: white;
+  z-index: inherit;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+}
+
+.pTime {
+  margin: 0;
+  padding: 0;
+}
+
+.timeBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeBar .progressBar {
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: white;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.timeBar .progressBar::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.timeBar .progressBar::-moz-range-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.timeBar .progressBar::-ms-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.controls {
+  margin-top: 1rem;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  color: white;
+  z-index: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.normalButton {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.pauseButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.timeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.normalButton, .pauseButton, .timeButton {
+  margin-inline: 10px;
+}

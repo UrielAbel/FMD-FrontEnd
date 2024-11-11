@@ -1,0 +1,106 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.headerImage {
+  background-image: linear-gradient(to bottom, #f5a623, #f28500);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  background-clip: border-box;
+}
+
+.gradient {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.contInfo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  padding-inline: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.date {
+  color: #ddd;
+  width: 100%;
+  padding-bottom: 1rem;
+  font-size: 14px;
+}
+
+.title {
+  font-size: calc(14px * 1.618 * 1.618);
+}
+
+.description {
+  font-weight: 300;
+  font-size: 20px;
+  color: #ddd;
+}
+
+.author {
+  padding-top: 1rem;
+  display: flex;
+}
+
+.contAuthorImg {
+  padding-inline: 0.5rem;
+}
+
+.authorImg {
+  border: solid 1px #dddddd60;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 70px;
+  transition: 1s all;
+  @media screen and (max-width: 800px) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    transition: 1s all;
+  }
+}
+
+.contAuthorInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.authorName {
+  color: #00b9ff;
+  font-weight: 600;
+  font-size: 16px;
+}
+.authorName,
+.authorBio {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.authorBio {
+  color: #ddd;
+  font-weight: 400;
+}

@@ -1,0 +1,30 @@
+.swiper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-inline: 60px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper {
+    padding-inline: 1rem;
+  }
+}

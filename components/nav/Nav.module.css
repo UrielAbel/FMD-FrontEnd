@@ -1,0 +1,27 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 68px;
+    background: linear-gradient(2700deg, #090909 1.26%, rgba(9, 9, 9, 0.71) 1.27%, rgba(9, 9, 9, 0) 98.51%, rgba(9, 9, 9, 0) 98.51%);
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 16px 60px;
+    z-index: 20000;
+}
+
+.contInput {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .nav {
+        padding: 16px 16px;
+    }
+}

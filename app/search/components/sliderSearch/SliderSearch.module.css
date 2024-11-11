@@ -1,0 +1,38 @@
+.blockResult {
+    width: 100%;
+    height: fit-content;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.labelResult {
+    width: 100%;
+    text-align: left;
+    padding-inline: 60px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    @media screen and (max-width: 800px) {
+        padding-inline: 1rem;
+    }
+}
+
+.sliderCont {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.card {
+    background-color: var(--second-color);
+    min-width: 200px;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: #fff;
+}

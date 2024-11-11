@@ -1,0 +1,80 @@
+.contCard {
+  height: 420px;
+  width: 100%;
+  border-radius: 10px;
+  border: solid 0.5px rgb(43, 42, 42);
+  background-color: #090909;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 0.5rem;
+}
+
+.contTextInside::-webkit-scrollbar-track,
+.contTextInside::-webkit-scrollbar-thumb,
+.contTextInside::-webkit-scrollbar-thumb:hover,
+.contTextInside::-webkit-scrollbar {
+  width: 1px;
+  background: #f1f1f100;
+}
+
+.contImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  height: fit-content;
+}
+
+.title,
+.description,
+.category,
+.author {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  height: fit-content;
+  color: #fff;
+}
+
+.title {
+  font-size: calc(14px * 1.618);
+  font-weight: 600;
+}
+
+.category,
+.author {
+  color: #fff;
+  font-size: 11px;
+  padding: 0.5rem 0;
+}
+.category {
+  color: #00b9ff;
+  margin-top: 1rem;
+}
+
+.author {
+  margin-bottom: 1rem;
+}
+
+.description {
+  padding-top: 0;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 200;
+}

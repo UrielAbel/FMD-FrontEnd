@@ -1,0 +1,33 @@
+.footer {
+    width: 200px;
+    margin: 3rem auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contLinks {
+    margin: 2rem 0;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+.text {
+    color: #ffffff;
+}
+.link {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-inline: .5rem;
+}
+.copy {
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: -1px;
+}

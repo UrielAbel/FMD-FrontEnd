@@ -1,0 +1,83 @@
+.title,
+.description {
+  padding: 0.5rem 0;
+  @media screen and (max-width: 800px) {
+    text-align: center;
+  }
+}
+.description {
+  font-size: 1rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.textCont {
+  width: 60%;
+  margin-inline: 1rem;
+  max-width: 1000px;
+  transition: all 1s ease-in-out;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+.subTitle,
+.text {
+  width: 100%;
+  text-align: left;
+}
+
+.link {
+  font-size: 16px;
+  line-height: calc(1rem * 1.618);
+  color: #00b9ff;
+  margin: 0.5rem 0;
+}
+
+.subTitle {
+  font-size: calc(1rem * 1.618);
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: solid 1px #00b9ff;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: calc(1rem * 1.618);
+  color: #dddddd;
+  margin: 0.5rem 0;
+  display: block;
+}
+
+.contImage {
+  width: 100%;
+  max-height: 700px;
+  height: auto;
+  position: relative;
+  margin: 1rem 0 .5rem 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: fit-content !important;
+  position: relative !important;
+}
+
+.textImage {
+  font-size: 14px;
+  line-height: calc(1rem * 1.618);
+  color: #fff;
+  font-weight: 600;
+  margin: 0 0 .5rem 0;
+}

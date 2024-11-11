@@ -1,0 +1,15 @@
+.contRela {
+    color: #FFF;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.SliderCont {
+    width: 100%;
+}

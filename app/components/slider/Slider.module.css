@@ -1,0 +1,83 @@
+.contAll {
+    width: 100%;
+    height: fit-content;
+    padding-inline: 60px;
+    overflow: auto;
+    position: relative;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-size: 800;
+    color: #fff;
+    padding: 1rem 1rem .5rem 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.contSlider {
+    width: 100%;
+    height: fit-content;
+    overflow: auto;
+    position: relative;
+    transition: scroll-left 1s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+.slider {
+    width: fit-content;
+    height: fit-content;
+    overflow: visible;
+    display: flex;
+}
+
+.buttonLeft,
+.buttonRight {
+    width: 30px;
+    height: calc(100% - 34px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+}
+
+.buttonLeft {
+    left: 10px;
+}
+
+.buttonRight {
+    left: calc(100% - 40px);
+}
+
+/* width */
+.contSlider::-webkit-scrollbar {
+    width: 1px;
+}
+
+/* Track */
+.contSlider::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+/* Handle */
+.contSlider::-webkit-scrollbar-thumb {
+    background: #f1f1f100;
+}
+
+/* Handle on hover */
+.contSlider::-webkit-scrollbar-thumb:hover {
+    background: #f1f1f100;
+}
+
+@media screen and (max-width: 800px) {
+    .contAll {
+        padding-inline: 16px;
+    }
+
+    .buttonLeft,
+    .buttonRight {
+        display: none;
+    }
+}

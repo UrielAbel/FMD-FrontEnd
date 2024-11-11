@@ -1,0 +1,12 @@
+.title {
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    padding: 100px 1rem 1rem 1rem;
+}
+.wrong {
+    color: #ff0000;
+    padding-right: .5rem;
+}

@@ -1,0 +1,118 @@
+.contContenido {
+  display: flex;
+  width: 100%;
+  padding: 70px 60px 20px 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerPodcast {
+  min-width: 700px;
+  height: 500px;
+  margin-right: 32px;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contInfoHeader {
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  color: white;
+  background: linear-gradient(to top, #000, #00000044 50%, #00000000 75%);
+}
+
+.titleHeader {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.desHeader {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.listEpisodes {
+  margin-top: 24px;
+  min-width: 400px;
+  max-width: 600px;
+  width: 100%;
+  height: fit-content;
+  min-height: 326px;
+  border-radius: 15px;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contRela {
+  width: 100%;
+  height: fit-content;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contRelaText {
+  width: 100%;
+  height: fit-content;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1252px) {
+  .contContenido {
+    flex-direction: column;
+  }
+
+  .contInfoHeader {
+    background: linear-gradient(to top, #000, #00000044 75%, #00000000 100%);
+  }
+
+  .headerPodcast {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    min-width: unset;
+  }
+
+  .listEpisodes {
+    min-width: unset;
+    max-width: unset;
+    min-height: unset;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contContenido {
+    padding-top: 0;
+    padding-inline: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headerPodcast {
+    border-radius: 0;
+    height: 400px;
+    text-align: center;
+  }
+
+  .contSection {
+    padding-inline: 16px;
+  }
+}

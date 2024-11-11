@@ -1,0 +1,139 @@
+.contCard {
+    margin-inline: 10px;
+    height: 220px;
+    border-radius: 10px;
+    border: solid .5px rgb(43, 42, 42);
+    background-color: #090909;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: .5rem;
+    height: 100%;
+    flex-direction: column;
+}
+
+.contTextInside {
+    overflow: auto;
+    margin: auto 0;
+    max-height: 100px;
+}
+
+/* width */
+.contTextInside::-webkit-scrollbar {
+    width: 1px;
+}
+
+/* Track */
+.contTextInside::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+/* Handle */
+.contTextInside::-webkit-scrollbar-thumb {
+    background: #f1f1f100;
+}
+
+/* Handle on hover */
+.contTextInside::-webkit-scrollbar-thumb:hover {
+    background: #f1f1f100;
+}
+
+.sep {
+    height: 1px;
+    background-color: #60606057;
+    border-radius: 1px;
+    margin-right: auto;
+}
+
+.contImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    min-width: 120px;
+    max-width: 120px;
+    overflow: hidden;
+    height: 100%;
+}
+.image {
+    width: fit-content;
+    height: 100%;
+}
+
+
+
+.title,
+.description,
+.category,
+.author {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    height: fit-content;
+    color: #fff;
+}
+
+.title {
+    font-size: calc(14px * 1.618);
+    font-weight: 600;
+}
+
+.category,
+.author {
+    color: #909090;
+    font-size: 11.5px;
+    padding: .5rem 0;
+    
+}
+.category {
+    color: #00b9ff;
+    margin-top: 20px;
+}
+
+.author {
+    margin-bottom: 20px;
+}
+
+.description {
+    padding-top: 0;
+    font-size: 14px;
+}
+@media screen and (max-width: 440px) {
+    .contImage {
+        min-width: 100px;
+    }
+};
+
+.testLACONCHADELALORA {
+    width: 100%;
+}
+
+@media only screen and (max-width:800px) {
+    .contCard {
+        width: calc(50vw - 32px);
+    }
+}
+@media only screen and (max-width:600px) {
+    .contCard {
+        width: calc(100vw - 42px);
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .contCard {
+        width: calc(50vw - 80px);
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .contCard {
+        width: calc((100vw/3) - 60px)
+    }
+}

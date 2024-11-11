@@ -1,0 +1,44 @@
+.button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: auto;
+    background-color: #ffffff00;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    width: fit-content;
+    color: #fff;
+}
+
+.input {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 20px;
+    height: fit-content;
+    padding: .3rem 1.25rem;
+    transition: width 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    color: #fff;
+    background-color: #09090960;
+    border: solid 1px #90909060;
+}
+
+.input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #aaa;
+}
+
+.cancel {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
