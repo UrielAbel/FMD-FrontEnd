@@ -1,4 +1,4 @@
-const baseURL = "https://api.feymind.com";
+const baseURL = "http://localhost:2500";
 
 const obtenerDatos = async () => {
   let podRes = await fetch(baseURL + "/podcasts", {

@@ -1,6 +1,6 @@
 const getPost = async (uri, serialize) => {
     let raw, frontMatter, serialized;
-    let post = await fetch(`https://api.feymind.com/articulo/${uri}`, {next: {revalidate: 3600}}).then(data => data.json())
+    let post = await fetch(`https://localhost:2500/articulo/${uri}`, {next: {revalidate: 3600}}).then(data => data.json())
 
     try {
         await fetch(post.CDNurl, {next: {revalidate: 3600}})

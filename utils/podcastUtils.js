@@ -1,6 +1,6 @@
 import { content } from "./contenido";
 
-const baseURL = "https://api.feymind.com"
+const baseURL = "http://localhost:2500"
 
 const getPodcastByName = async (path) => {
     let podRes = await fetch(`${baseURL}/podcast/${path}`, {next: { revalidate: 60 }})

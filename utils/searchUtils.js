@@ -1,4 +1,4 @@
-const baseURL = "https://api.feymind.com";
+const baseURL = "http://localhost:2500";
 
 const getResultByKeyWord = async (keyWord) => {
   let podRes = await fetch(`${baseURL}/contenido/palabraClave/${keyWord}`).then((data) => data.json());
